@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    background: #f8f8f8;
+    padding: 10px 20px;
+    /* Mobile padding */
+}
+
+.header__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__heading img {
+    max-width: 100%;
+    /* Responsive logo */
+    height: auto;
+}
+
+.header__inline-menu {
+    display: flex;
+    justify-content: center;
+    /* Center menu items */
+    flex-wrap: wrap;
+    /* Wrap on smaller screens */
+}
+
+.header__menu-item {
+    margin: 0 15px;
+    /* Spacing between items */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+/* Announcement Bar */
+.announcement-bar__link {
+    background: #ffcc00;
+    /* Highlight announcement bar */
+    color: #000;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Video Responsiveness */
+video {
+    width: 100%;
+    /* Make video responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Menu Drawer Styles */
+.menu-drawer {
+    display: none;
+    /* Hide by default */
+}
+
+.menu-drawer--open {
+    display: block;
+    /* Show on open */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        /* Stack for mobile */
+    }
+
+    .header__inline-menu {
+        flex-direction: column;
+        /* Stack menu items */
+        align-items: center;
+        /* Center align items */
+    }
+
+    .header__menu-item {
+        margin: 10px 0;
+        /* Stack spacing */
+    }
+
+    .announcement-bar__message {
+        font-size: 14px;
+        /* Smaller font for mobile */
+    }
+}
+
+/* Adjust SVG sizes */
+.svg-wrapper svg {
+    width: 24px;
+    /* Adjust size for icons */
+    height: 24px;
+    /* Maintain size for both height and width */
+}
+
+/* Utility Styles */
+.hidden {
+    display: none;
+    /* Utility class to hide elements */
+}
